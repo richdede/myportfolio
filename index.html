@@ -7,8 +7,9 @@
     <title>Dede | Full-Stack Developer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://kit.fontawesome.com/922af2f714.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body id="top">
     <nav id="desktop-nav">
       <div class="logo">Dee Prince</div>
       <div>
@@ -17,11 +18,15 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li onclick="toggleContrast()"> <a href="#" class="nav__link--anchor"><i class="fa-solid fa-circle-half-stroke"></i></a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
       <div class="logo">Dee Prince</div>
+      <ul class="nav-link">
+        <li onclick="toggleContrast()"> <a href="#" class="nav__link--anchor"><i class="fa-solid fa-circle-half-stroke"></i></a></li>
+      </ul>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -709,6 +714,20 @@
       </nav>
       <p>Copyright &#169; 2024 Dee Prince. All Rights Reserved.</p>
     </footer>
+
+
+    <a href="#top" class="go-top" data-go-top title="Go to Top">
+      <ion-icon name="arrow-up"></ion-icon>
+    </a>
+
+
     <script src="script.js"></script>
+
+
+      <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
