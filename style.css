@@ -25,9 +25,28 @@ ul {
 
 /* darktheme */
 
-.dark-theme body {
-  background-color: #242424;
+.dark-theme a,
+.dark-theme .nav-links,
+.dark-theme h1,
+.dark-theme .section__text__p1,
+.dark-theme .logo,
+.dark-theme .hamburger-icon,
+.dark-theme .section__text__p2,
+.dark-theme .text,
+.dark-theme .go-top {
   color: white;
+}
+
+.dark-theme .go-top {
+  border: 2px solid white;
+}
+
+.dark-theme .hamburger-icon span {
+  background-color: white;
+}
+
+.dark-theme main {
+  background-color: #242424;
 }
 
 
@@ -57,12 +76,15 @@ nav {
   font-size: 1.5rem;
 }
 
-.fa-solid {
-  font-size: 27px;
+.nav-icon {
+  font-size: 24px;
+  padding-top: 2px;
 }
 
 .small-nav {
   gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -105,6 +127,7 @@ a:hover {
   height: 24px;
   width: 30px;
   cursor: pointer;
+  padding-bottom: 3px;
 }
 
 .hamburger-icon span {

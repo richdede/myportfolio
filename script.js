@@ -9,8 +9,7 @@ function toggleMenu() {
  *  darktheme
  */
 
-
-let contrastToggle=false;
+let contrastToggle = localStorage.getItem('contrastToggle') === 'true';
 
 function toggleContrast() {
   contrastToggle =!contrastToggle;
@@ -20,6 +19,11 @@ function toggleContrast() {
   } else {
     document.body.classList.remove("dark-theme");
   }
+  localStorage.setItem('contrastToggle', contrastToggle);
+}
+
+if (contrastToggle) {
+  document.body.classList.add("dark-theme");
 }
 
 
