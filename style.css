@@ -34,8 +34,13 @@ ul {
 .dark-theme .section__text__p2,
 .dark-theme .text,
 .dark-theme .go-top,
-.dark-theme .btn-color-2 {
+.dark-theme .btn-special,
+.dark-theme .icon {
   color: white;
+}
+
+.dark-theme .icon {
+  font-size: 30px;
 }
 
 .dark-theme .go-top {

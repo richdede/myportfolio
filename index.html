@@ -7,7 +7,10 @@
     <title>Dede | Full-Stack Developer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <script src="https://kit.fontawesome.com/922af2f714.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/922af2f714.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body id="top">
     <main>
@@ -19,16 +22,22 @@
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li onclick="toggleContrast()" > <a href="#" ><i class="fa-solid fa-circle-half-stroke"></i></a></li>
+            <li onclick="toggleContrast()">
+              <a href="#"><i class="fa-solid fa-circle-half-stroke"></i></a>
+            </li>
           </ul>
         </div>
       </nav>
       <nav id="hamburger-nav">
         <div class="logo">Dee Prince</div>
-  
+
         <div class="small-nav">
           <ul>
-            <li onclick="toggleContrast()" > <a href="#" ><i class="fa-solid fa-circle-half-stroke nav-icon"></i></a></li>
+            <li onclick="toggleContrast()">
+              <a href="#"
+                ><i class="fa-solid fa-circle-half-stroke nav-icon"></i
+              ></a>
+            </li>
           </ul>
           <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
@@ -38,13 +47,14 @@
             </div>
             <div class="menu-links">
               <li><a href="#about" onclick="toggleMenu()">About</a></li>
-              <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+              <li>
+                <a href="#experience" onclick="toggleMenu()">Experience</a>
+              </li>
               <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
               <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
           </div>
         </div>
-  
       </nav>
       <section id="profile">
         <div class="section__pic-container">
@@ -56,28 +66,31 @@
           <p class="section__text__p2">Fullstack Developer</p>
           <div class="btn-container">
             <button
-              class="btn btn-color-2"
+              class="btn btn-color-2 btn-special"
               onclick="window.open('./assets/DedeCV.pdf')"
             >
               Download CV
             </button>
-            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='./#contact'"
+            >
               Contact Info
             </button>
           </div>
           <div id="socials-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="My LinkedIn profile"
-              class="icon"
+
+            <ion-icon
               onclick="location.href='https://www.linkedin.com/in/dee-prince-dede-970913217/'"
-            />
-            <img
-              src="./assets/github.png"
-              alt="My Github profile"
               class="icon"
-              onclick="location.href='https://github.com/richdede'"
-            />
+              name="logo-linkedin"
+            ></ion-icon>
+
+            <ion-icon
+            class="icon"
+            onclick="location.href='https://github.com/richdede'"
+            name="logo-github"
+          ></ion-icon>
           </div>
         </div>
       </section>
@@ -115,18 +128,18 @@
             </div>
             <div class="text-container">
               <p class="text">
-                As a software engineer, I am passionate about using technology to
-                solve complex problems and improve people's lives. Throughout my
-                experiences, I have developed a strong foundation in programming
-                concepts, software development methodologies, and best practices
-                for building high-quality, scalable applications. Logical and
-                results-driven full stack developer dedicated to building and
-                optimizing user-focused websites and applications. Judicious and
-                creative when crafting effective websites, apps and platforms to
-                propel competitive advantage and revenue growth. Technically
-                proficient and analytical problem solver with calm and focused
-                demeanor, and I enjoy keeping up to date with the latest trends
-                and updates.
+                As a software engineer, I am passionate about using technology
+                to solve complex problems and improve people's lives. Throughout
+                my experiences, I have developed a strong foundation in
+                programming concepts, software development methodologies, and
+                best practices for building high-quality, scalable applications.
+                Logical and results-driven full stack developer dedicated to
+                building and optimizing user-focused websites and applications.
+                Judicious and creative when crafting effective websites, apps
+                and platforms to propel competitive advantage and revenue
+                growth. Technically proficient and analytical problem solver
+                with calm and focused demeanor, and I enjoy keeping up to date
+                with the latest trends and updates.
               </p>
             </div>
           </div>
@@ -310,11 +323,12 @@
               <h2 class="experience-sub-title project-title">Keepz</h2>
               <p>
                 <strong>Keepz - Keep Your Notes</strong><br />
-                Inspired by Google Keep, Keepz is a note-taking website developed
-                with React and adorned with Tailwind CSS and Material UI. It
-                offers a user-friendly experience, allowing you to effortlessly
-                create and manage notes. The responsive design ensures a seamless
-                experience across all devices, making note-taking a breeze.
+                Inspired by Google Keep, Keepz is a note-taking website
+                developed with React and adorned with Tailwind CSS and Material
+                UI. It offers a user-friendly experience, allowing you to
+                effortlessly create and manage notes. The responsive design
+                ensures a seamless experience across all devices, making
+                note-taking a breeze.
               </p>
               <br />
               <h4>React Tailwind CSS Material UI</h4>
@@ -412,7 +426,8 @@
               </div>
               <h2 class="experience-sub-title project-title">Pricewise</h2>
               <p>
-                <strong>Web Scraping App - eCommerce Price Tracker(MERN) </strong
+                <strong
+                  >Web Scraping App - eCommerce Price Tracker(MERN) </strong
                 ><br />
                 Welcome to the Pricewise project, a comprehensive solution for
                 tracking product prices on Amazon. This project is designed to
@@ -455,11 +470,12 @@
                 ><br />
                 Welcome to the Sumz project, a robust AI Software Article
                 Summarizer Application using OpenAI's GPT model. - Inspired by
-                being a student and you have those long article to cover - create
-                a responsive, beautiful UI/UX with a nice touch of glass morphism
-                using Tailwind CSS - make advanced RTK query API requests that
-                fire on condition - save history using the local storage - handle
-                form events and catch errors - implement copy to clipboard
+                being a student and you have those long article to cover -
+                create a responsive, beautiful UI/UX with a nice touch of glass
+                morphism using Tailwind CSS - make advanced RTK query API
+                requests that fire on condition - save history using the local
+                storage - handle form events and catch errors - implement copy
+                to clipboard
               </p>
               <br />
               <h4>React Tailwind CSS Rapid API</h4>
@@ -528,15 +544,15 @@
               <p>
                 <strong>Book Store App - online book shopping platform </strong
                 ><br />
-                ELibrary is a React-based online book shopping platform. It offers
-                a wide range of books, from classic literature to the latest
-                bestsellers, with a user-friendly interface to easily search,
-                browse and purchase books. All books are available in digital
-                format and can be read online or downloaded. It is responsive,
-                optimized for all devices, and has secure payment gateway
-                integrated, along with a book recommendation system. Perfect for
-                book lovers looking for an easy and convenient way to buy and read
-                books online.
+                ELibrary is a React-based online book shopping platform. It
+                offers a wide range of books, from classic literature to the
+                latest bestsellers, with a user-friendly interface to easily
+                search, browse and purchase books. All books are available in
+                digital format and can be read online or downloaded. It is
+                responsive, optimized for all devices, and has secure payment
+                gateway integrated, along with a book recommendation system.
+                Perfect for book lovers looking for an easy and convenient way
+                to buy and read books online.
               </p>
               <br />
               <h4>Reactjs Javascript CSS</h4>
@@ -603,13 +619,13 @@
               <h2 class="experience-sub-title project-title">Ultraverse</h2>
               <p>
                 <strong>Ultraverse - NFT MarketPlace </strong><br />
-                Ultraverse is a React-based NFT showcase platform that
-                offers creators a visually stunning and interactive tool
-                to display their artwork. Features like Animate on Scroll,
-                skeleton loading state, and React Slick Carousel provide a
-                seamless user experience. Ultraverse brings NFT showcases
-                to life with engaging visuals and immersive experiences
-                for artists and collectors alike.
+                Ultraverse is a React-based NFT showcase platform that offers
+                creators a visually stunning and interactive tool to display
+                their artwork. Features like Animate on Scroll, skeleton loading
+                state, and React Slick Carousel provide a seamless user
+                experience. Ultraverse brings NFT showcases to life with
+                engaging visuals and immersive experiences for artists and
+                collectors alike.
               </p>
               <br />
               <h4>
@@ -643,13 +659,13 @@
               <p>
                 <strong>Discord Clone - Your place of talk and hangout</strong
                 ><br />
-                Discord Clone is a web application meticulously crafted with React
-                and Tailwind CSS to mirror the essence and functionality of the
-                original Discord app. It encompasses a faithful reproduction of
-                Discord's home page, Nitro page, and Safety page. The application
-                boasts full responsiveness, ensuring a seamless experience across
-                devices. Furthermore, every link seamlessly connects to the
-                official Discord site.
+                Discord Clone is a web application meticulously crafted with
+                React and Tailwind CSS to mirror the essence and functionality
+                of the original Discord app. It encompasses a faithful
+                reproduction of Discord's home page, Nitro page, and Safety
+                page. The application boasts full responsiveness, ensuring a
+                seamless experience across devices. Furthermore, every link
+                seamlessly connects to the official Discord site.
               </p>
               <br />
               <h4>React Tailwind CSS Material UI</h4>
@@ -683,14 +699,22 @@
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
           <div class="contact-info-container">
+            <ion-icon name="mail-sharp"></ion-icon>
             <img
               src="./assets/email.png"
               alt="Email icon"
               class="icon contact-icon email-icon"
             />
-            <p><a href="mailto:dede@craftspace.tech">dede@craftspace.tech</a></p>
+            <p>
+              <a href="mailto:dede@craftspace.tech">dede@craftspace.tech</a>
+            </p>
           </div>
           <div class="contact-info-container">
+            <ion-icon
+            onclick="location.href='https://www.linkedin.com/in/dee-prince-dede-970913217/'"
+            class="icon"
+            name="logo-linkedin"
+          ></ion-icon>
             <img
               src="./assets/linkedin.png"
               alt="LinkedIn icon"
@@ -717,23 +741,28 @@
             </ul>
           </div>
         </nav>
-        <p class="text">Copyright &#169; 2024 Dee Prince. All Rights Reserved.</p>
+        <p class="text">
+          Copyright &#169; 2024 Dee Prince. All Rights Reserved.
+        </p>
       </footer>
-  
-  
+
       <a href="#top" class="go-top" data-go-top title="Go to Top">
         <ion-icon name="arrow-up"></ion-icon>
       </a>
-  
-  
+
       <script src="script.js"></script>
-  
-  
-        <!-- 
+
+      <!-- 
       - ionicon link
     -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
     </main>
   </body>
 </html>
