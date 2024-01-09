@@ -511,3 +511,121 @@ footer p {
   transform: translateY(0);
 }
 
+/* splash screen */
+#splash-screen {
+  position: fixed;
+  top: 0;
+  left: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+
+.splash-content::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #0d1321, #0d1321);
+  mix-blend-mode: color;
+  pointer-events: none;
+}
+
+video {
+  object-fit: cover;
+}
+
+.splash-content h1 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  color: #f0ebd8;
+  font-size: 8em;
+  text-transform: uppercase;
+  font-family: var(--font3);
+  filter: drop-shadow(1px 1px 6px #f0ebd8);
+}
+
+.splash-content h1 span {
+  opacity: 0;
+  display: inline-block;
+  filter: blur(1px);
+  animation: smoke 0.5s linear forwards;
+}
+
+@keyframes smoke {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+    filter: blur(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateY(0);
+    filter: blur(0);
+  }
+}
+
+.splash-content h1 span:nth-child(1) {
+  animation-delay: 1.2s;
+}
+
+.splash-content h1 span:nth-child(2) {
+  animation-delay: 2.4s;
+}
+
+.splash-content h1 span:nth-child(3) {
+  animation-delay: 3.3s;
+}
+
+@media only screen and (max-width: 600px) {
+    /* splashscreen responsiveness starts */
+    .splash-content h1 {
+      font-size: 3em;
+      line-height: 1.5em;
+    }
+    #splash-screen {
+      background-size: contain;
+      max-width: 100%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 850px) {
+  .splash-content h1 {
+    font-size: 6em;
+    line-height: 1.5em;
+  }
+  #splash-screen {
+    background-size: contain;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1200px) {
+    /* splashscreen responsiveness starts */
+    .splash-content h1 {
+      font-size: 6.5em;
+      line-height: 1.2em;
+    }
+    #splash-screen {
+      background-size: contain;
+    }
+}

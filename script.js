@@ -43,3 +43,19 @@ window.addEventListener("scroll", function () {
   }
 
 });
+
+ // JavaScript to hide the splash screen when the page is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+var splashScreen = document.getElementById("splash-screen");
+  if (splashScreen) {
+    var delay = 4000;
+
+setTimeout(function () {
+splashScreen.classList.add("hidden");
+
+setTimeout(function () {
+        splashScreen.style.display = "none";
+      }, 1000);
+    }, delay);
+  }
+});
