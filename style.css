@@ -19,6 +19,18 @@ p {
   color: rgb(85, 85, 85);
 }
 
+ul {
+  list-style: none;
+}
+
+/* darktheme */
+
+.dark-theme body {
+  background-color: #242424;
+  color: white;
+}
+
+
 /* TRANSITION */
 
 a,
@@ -29,7 +41,7 @@ a,
 /* DESKTOP NAV */
 
 nav,
-.nav-links {
+.nav-links, .small-nav {
   display: flex;
 }
 
@@ -44,6 +56,15 @@ nav {
   list-style: none;
   font-size: 1.5rem;
 }
+
+.fa-solid {
+  font-size: 27px;
+}
+
+.small-nav {
+  gap: 20px;
+}
+
 
 a {
   color: black;
@@ -429,12 +450,6 @@ footer {
 
 footer p {
   text-align: center;
-}
-
-
-.dark-theme body {
-  background-color: #242424;
-  color: white;
 }
 
 /*-----------------------------------*\

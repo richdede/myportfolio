@@ -18,28 +18,32 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li onclick="toggleContrast()"> <a href="#" class="nav__link--anchor"><i class="fa-solid fa-circle-half-stroke"></i></a></li>
+          <li onclick="toggleContrast()" > <a href="#" ><i class="fa-solid fa-circle-half-stroke"></i></a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
       <div class="logo">Dee Prince</div>
-      <ul class="nav-link">
-        <li onclick="toggleContrast()"> <a href="#" class="nav__link--anchor"><i class="fa-solid fa-circle-half-stroke"></i></a></li>
-      </ul>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+
+      <div class="small-nav">
+        <ul>
+          <li onclick="toggleContrast()" > <a href="#" ><i class="fa-solid fa-circle-half-stroke"></i></a></li>
+        </ul>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
         </div>
       </div>
+
     </nav>
     <section id="profile">
       <div class="section__pic-container">

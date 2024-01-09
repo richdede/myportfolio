@@ -5,8 +5,13 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+/**
+ *  darktheme
+ */
+
 
 let contrastToggle=false;
+
 function toggleContrast() {
   contrastToggle =!contrastToggle;
   if (contrastToggle) {
