@@ -33,7 +33,8 @@ ul {
 .dark-theme .hamburger-icon,
 .dark-theme .section__text__p2,
 .dark-theme .text,
-.dark-theme .go-top {
+.dark-theme .go-top,
+.dark-theme .btn-color-2 {
   color: white;
 }
 
